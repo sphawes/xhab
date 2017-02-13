@@ -14,5 +14,5 @@ the plugin manager.
 
 ## Configuration
 
-**TODO:** Describe your plugin's configuration options (if any).\
-Tyler is salty
+**TODO:** Describe your plugin's configuration options (if any).
+Tyler is a cool cat
