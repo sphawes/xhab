@@ -1,6 +1,6 @@
 #This script is called when any of the buttons on our custom octoprint tab are clicked
-#execution for engaging linear actuator: "automation.py 1"
-#execution for disengaging linear actuator: "automation.py 2"
+#execution for engaging linear actuator: "python automation.py 1"
+#execution for disengaging linear actuator: "python automation.py 2"
 #etc, etc
 
 import serial
@@ -54,6 +54,8 @@ elif command == "6":
         print "Command Sent"
     except:
         print "Sending Failed"
+else:
+    print "Invalid argument. Please follow the script with a numeral 1-6."
 
 
 ser.close()
