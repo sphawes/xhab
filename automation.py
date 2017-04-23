@@ -4,19 +4,20 @@
 #etc, etc
 
 import serial
-import sys
+import cgi
 
 ser=serial.Serial()
 
 try:
-    port = "/dev/cu.USB1"
+    port = "/dev/ttyAMA0"
     print "Attempting connection with " + port
     ser = serial.Serial(port, 9600, timeout=1)
 except:
     print 'Connection Failed'
     break
 
-command = sys.argv[0]
+arguments = cgi.FieldStorage()
+command = str(arguments[0].value)
 
 if command == "1":
     try:
